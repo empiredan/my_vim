@@ -2,8 +2,8 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 set cindent
-autocmd FileType python,php,erlang setlocal et sta sw=4 sts=4
-autocmd FileType c,cpp,h,hpp,cc,cxx,tcc,sh,lua,bidl setlocal et sta sw=4 sts=4
+autocmd FileType python,php,erlang setlocal et sta sw=4 sts=4 ts=4
+autocmd FileType c,cpp,h,hpp,cc,cxx,tcc,sh,lua,bidl setlocal et sta sw=4 sts=4 ts=4
 set hlsearch
 
 " For chinese coding
