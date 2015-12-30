@@ -2,17 +2,23 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 set cindent
-autocmd FileType python,php,erlang setlocal et sta sw=4 sts=4 ts=4
-autocmd FileType c,cpp,h,hpp,cc,cxx,tcc,sh,lua,bidl setlocal et sta sw=4 sts=4 ts=4
+"autocmd FileType python,php,erlang setlocal et sta sw=4 sts=4 ts=4
+autocmd FileType python,php,erlang setlocal et sta sw=4 sts=4
+"autocmd FileType c,cpp,h,hpp,cc,cxx,tcc,sh,lua,bidl setlocal et sta sw=4 sts=4 ts=4
+autocmd FileType c,cpp,h,hpp,cc,cxx,tcc,java,xml,sh,lua,bidl setlocal et sta sw=4 sts=4
 set hlsearch
 
 " For chinese coding
-set encoding=utf-8
-set fileencodings=utf-8,chinese,latin-1
+"set encoding=utf-8
+"set fileencodings=utf-8,chinese,latin-1
+" gbk cp936
+"set encoding=gb2312
+"set fileencodings=euc-cn,cp936,utf-8,chinese,latin-1
+"set fileencodings=euc-cn,cp936,utf-8,ucs-bom
 if has("win32")
-  set fileencoding=chinese
+  "set fileencoding=chinese
 else
-  set fileencoding=utf-8
+  "set fileencoding=utf-8
 endif
 
 " Uncomment the following to have Vim jump to the last position when
@@ -56,6 +62,7 @@ let g:miniBufExplorerMoreThanOne=0
 " Nerd tree
 let g:NERDTree_title="[NERDTree]"  
 let NERDTreeIgnore = ['.*\.o$','.*\.vcproj$','.*\.ko$','.*\.gz$','^tags$']
+let g:NERDTreeDirArrows=0
 
 function! NERDTree_Start()  
     exec 'NERDTree'  
@@ -82,3 +89,15 @@ nnoremap <silent> <F3> :Grep<CR>
 
 let g:SuperTabRetainCompletionType=2
 let g:SuperTabDefaultCompletionType="<C-X><C-O>"
+
+set ruler
+
+set encoding=utf-8
+let &termencoding=&encoding
+set fileencodings=utf-8,gbk,utf-16,euc-cn,cp936,ucs-bom
+
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
