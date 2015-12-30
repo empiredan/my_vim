@@ -5,7 +5,7 @@ set cindent
 "autocmd FileType python,php,erlang setlocal et sta sw=4 sts=4 ts=4
 autocmd FileType python,php,erlang setlocal et sta sw=4 sts=4
 "autocmd FileType c,cpp,h,hpp,cc,cxx,tcc,sh,lua,bidl setlocal et sta sw=4 sts=4 ts=4
-autocmd FileType c,cpp,h,hpp,cc,cxx,tcc,java,xml,sh,lua,bidl setlocal et sta sw=4 sts=4
+autocmd FileType c,cpp,h,hpp,cc,cxx,go,tcc,java,xml,sh,lua,bidl setlocal et sta sw=4 sts=4
 set hlsearch
 
 " For chinese coding
