@@ -6,7 +6,7 @@ set cindent
 autocmd FileType python,php,erlang setlocal et sta sw=4 sts=4
 "autocmd FileType c,cpp,h,hpp,cc,cxx,tcc,sh,lua,bidl setlocal et sta sw=4 sts=4 ts=4
 "autocmd FileType c,cpp,h,hpp,cc,cxx,go,tcc,java,xml,sh,lua,bidl setlocal et sta sw=4 sts=4
-autocmd FileType c,cpp,h,hpp,cc,cxx,tcc,java,xml,sh,lua,bidl,json setlocal et sta sw=4 sts=4
+autocmd FileType c,cpp,h,hpp,cc,cxx,tcc,java,xml,sh,lua,bidl,json,sql setlocal et sta sw=4 sts=4
 set hlsearch
 set backspace=2
 
@@ -180,3 +180,5 @@ endif
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+
+let g:go_fmt_command = "goimports"
