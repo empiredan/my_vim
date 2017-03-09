@@ -182,3 +182,5 @@ endif
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
 let g:go_fmt_command = "goimports"
+
+colorscheme desert
