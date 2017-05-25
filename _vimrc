@@ -183,4 +183,11 @@ let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
 let g:go_fmt_command = "goimports"
 
-colorscheme desert
+"colorscheme desert
+
+colorscheme molokai
+
+"syntax enable
+"set background=light
+"set background=dark
+"colorscheme solarized
